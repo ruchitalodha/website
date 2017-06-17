@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Crafty+Girls|Gloria+Hallelujah|Pacifico|Rajdhani|Sacramento|Satisfy');
+.logo {
+  padding: 8px 50px;
+  font-size: 40px;
+  color: white;
+  font-family:Gloria Hallelujah;
+  background:black;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  height:100vh;
+}
+
+body *{
+  box-sizing: inherit;
+}
+
+.home-content{
+  background: #5c6469;
+  height: 100%;
+  font-size: 50px;
+  color:#2f2f1e;
+  padding: 50px;
+  font-family:Sacramento;
+  background: radial-gradient(at 50% 0%, #2f2f1e, black);
+}
