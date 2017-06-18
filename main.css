@@ -1,10 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie|Crafty+Girls|Gloria+Hallelujah|Pacifico|Rajdhani|Sacramento|Satisfy');
+
+.top-nav{
+background:black;
+margin: 0 auto;
+}
+
+.left, .right {
+    float: left;
+    height: 100px;
+    color: white;
+}
+.left {
+     width: 25%;
+     background-color:black;
+}
+.right {
+     width: 75%;
+     background-color: black;
+     padding-right: 40px;
+}
+
 .logo {
-  padding: 8px 50px;
   font-size: 40px;
   color: white;
   font-family:Gloria Hallelujah;
-  background:black;
+  padding: 8px 50px
+}
+
+.right ul{
+  float:right;
+}
+.right li{
+   float: left;
+   display: inline;
+
+}
+.right ul li a{
+font-size: 16px;
+font-family: 'Julius Sans One', sans-serif;
+text-transform: uppercase;
+font-weight: 100;
+color: white;
+padding:0 20px;
+text-decoration: none;
+line-height: 70px;
 }
 
 body {
