@@ -46,6 +46,13 @@ text-decoration: none;
 line-height: 70px;
 }
 
+.right ul li a:hover, .right ul li a:focus
+{
+color: #fff;
+text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+
 body {
   box-sizing: border-box;
   margin: 0;
