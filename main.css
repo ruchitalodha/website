@@ -96,10 +96,11 @@ content: "";
 
 /********* When Hover on button **********/
 
+@media only screen and (min-width: 1000px) {
 .menu-button-container:hover span { background-color: white; }
 .menu-button-container:hover .menu-button-top { top: 10px;}
 .menu-button-container:hover .menu-button-bottom { bottom: 10px; }
-
+}
 
 /********* Button Nav with Active Class is Applied **********/
 
