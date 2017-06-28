@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie|Crafty+Girls|Gloria+Hallelujah|Pacifico|Rajdhani|Sacramento|Satisfy|Montserrat|Fresca|Courgette|Great+Vibes');
 
 body {
-  background-image: url('./img/pixel.png');
+    background-image: url('./img/pixel.png');
 }
 
 .top-nav{
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 .left, .right {
@@ -16,103 +16,103 @@ margin: 0 auto;
     width: 50%;
 }
 .right {
-     padding-right: 40px;
+    padding-right: 40px;
 }
 
 .logo {
-  font-size: 40px;
-  color: white;
-  font-family:Gloria Hallelujah;
-  padding: 8px 50px
+    font-size: 40px;
+    color: white;
+    font-family:Gloria Hallelujah;
+    padding: 8px 50px
 }
 
 body {
-  box-sizing: border-box;
-  margin: 0;
-  height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
 }
 
 body *{
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 .home-content{
-  font-size: 50px;
-  color: black;
-  padding: 50px;
-  font-family:Great Vibes;
-  margin-top: 100px;
+    font-size: 50px;
+    color: black;
+    padding: 50px;
+    font-family:Great Vibes;
+    margin-top: 100px;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
 }
 
 header::after{
-clear: both;
-display: block;
-content: "";
+    clear: both;
+    display: block;
+    content: "";
 }
 
 /********* Button Nav When Active Class is not applied **********/
 
 .menu-button-container {
-  position: absolute;
-  top: 2.4em;
-  right: 5%;
-  width: 2.5em;
-  height: 1.7em;
-  float: right;
-  z-index: 30;
-  cursor: crosshair;
-  transition: all .5s ease;
+    position: absolute;
+    top: 2.4em;
+    right: 5%;
+    width: 2.5em;
+    height: 1.7em;
+    float: right;
+    z-index: 30;
+    cursor: crosshair;
+    transition: all .5s ease;
 }
 
 .menu-button-container span {
-  position: absolute;
-  background-color: #FFF;
-  height: 2px;
-  width: 100%;
-  z-index: 300;
-  transition: all .25s;
+    position: absolute;
+    background-color: #FFF;
+    height: 2px;
+    width: 100%;
+    z-index: 300;
+    transition: all .25s;
 }
 
 .menu-button-top {
-  top: 0;
-  width: 80%;
-  transition: background-color .25s;
+    top: 0;
+    width: 80%;
+    transition: background-color .25s;
 }
 .menu-button-middle {
-  top: 50%;
-  transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 .menu-button-bottom {
-  bottom: 0;
+    bottom: 0;
 }
 
 /********* When Hover on button **********/
 
 @media only screen and (min-width: 1000px) {
-.menu-button-container:hover span { background-color: white; }
-.menu-button-container:hover .menu-button-top { top: 10px;}
-.menu-button-container:hover .menu-button-bottom { bottom: 10px; }
+    .menu-button-container:hover span { background-color: white; }
+    .menu-button-container:hover .menu-button-top { top: 10px;}
+    .menu-button-container:hover .menu-button-bottom { bottom: 10px; }
 }
 
 /********* Button Nav with Active Class is Applied **********/
 
 .menu-button-container.active {
-  position: fixed;
+    position: fixed;
 }
 
 .menu-button-container.active:hover {
-  transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 .menu-button-container.active:hover span {
-  background-color: #ef463f;;
+    background-color: #ef463f;;
 
 }
 
@@ -122,114 +122,120 @@ content: "";
 /********* Making The X **********/
 
 .menu-button-container.active .menu-button-top {
-  transform: translateY(.8em) translateX(0) rotate(45deg);
-  background-color: #FFF;
+    transform: translateY(.8em) translateX(0) rotate(45deg);
+    background-color: #FFF;
 }
 .menu-button-container.active .menu-button-middle {
-  opacity: 0;
+    opacity: 0;
 }
 .menu-button-container.active .menu-button-bottom {
-  transform: translateY(-.8em) translateX(0) rotate(-45deg);
-  background-color: #FFF;
+    transform: translateY(-.8em) translateX(0) rotate(-45deg);
+    background-color: #FFF;
 }
 
 /********** When The Navigation Is closed ***********/
 .menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  /*background-color: #ef463f;*/
-  background-color: black ;
-  z-index: 20;
-  height: 0%; /* initial state*/
-  opacity: 0; /* initial state*/
-  visibility: hidden; /* initial state*/
-  transition: opacity .35s, visibility .35s, height .35s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /*background-color: #ef463f;*/
+    background-color: black ;
+    z-index: 20;
+    height: 0%; /* initial state*/
+    opacity: 0; /* initial state*/
+    visibility: hidden; /* initial state*/
+    transition: opacity .35s, visibility .35s, height .35s;
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-nav {
+        height: 60% !important;
+    }
 }
 
 .main-nav {
-  position: relative;
-  top: 40%;
-  text-align: center;
-  height: 60%;
-  transform: translateY(-50%);
+    height: 50%;
+    position: relative;
+    top: 40%;
+    text-align: center;
+    transform: translateY(-50%);
 }
 
 .main-nav ul {
-  list-style: none;
-  height: 100%;
-  white-space: nowrap;
-  text-align: center;
+    list-style: none;
+    height: 100%;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .main-nav ul li {
-  position: relative;
-  min-height: 50px;
-  height: 25%;
-  height: calc(100% / 4);
-  opacity: 0;
-  display: block;
+    position: relative;
+    min-height: 50px;
+    height: 25%;
+    height: calc(100% / 4);
+    opacity: 0;
+    display: block;
 }
 
 .main-nav ul li a {
-  display: inline-block;
-  color: #FFF;
-  text-decoration: none;
-  font-size: 4em;
-  transform: scale(1);
-  transition: all .25s;
-  font-family: 'Montserrat';
-  text-transform: uppercase;
-  letter-spacing: 3px;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 4em;
+    transform: scale(1);
+    transition: all .25s;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .main-nav ul li a:hover {
-  letter-spacing: 8px;
-  transform: scale(1.1);
-  color: #ef463f;;
+    letter-spacing: 8px;
+    transform: scale(1.1);
+    color: #ef463f;;
 }
 
 .social-nav {
-  position: absolute;
-  bottom: 3.5em;
-  text-align: center;
-  width: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top:15%;
 }
 
 .social-nav ul {
-  list-style: none;
-  height: 100%;
+    list-style: none;
+    height: 100%;
 }
 
 .social-nav ul li {
-  position: relative;
-  opacity: 0;
-  display: inline-block;
-  height: 100%;
-  vertical-align: text-bottom;
-  margin-right: 1em;
+    position: relative;
+    opacity: 0;
+    display: inline-block;
+    height: 100%;
+    vertical-align: text-bottom;
+    margin-right: 1em;
 }
 
 .social-nav ul li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .social-nav ul li a {
-  height: 100%;
-  display: inline-block;
+    height: 100%;
+    display: inline-block;
 }
 
 .social-nav li svg {
-  width: 3.5em;
-  height: auto;
-  fill: #ef463f;;
-  transition: all .25s ease;
+    width: 3.5em;
+    height: auto;
+    fill: #ef463f;;
+    transition: all .25s ease;
 }
 
 .social-nav li svg:hover {
-  fill: #FFF;
-  transform: rotate(360deg);
+    fill: #FFF;
+    transform: rotate(360deg);
 }
 
 
@@ -238,45 +244,45 @@ content: "";
 /*** Menu Navigation Entrance Animation ***/
 
 @keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 50%;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+    0% {
+        opacity: 0;
+        left: 50%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
 }
 
 .menu-overlay.open {
-  opacity: 1;
-  visibility: visible;
-  height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
 }
 
 .menu-overlay.open .main-nav li,
 .menu-overlay.open .social-nav li {
-  animation: fadeInRight .5s ease forwards;
+    animation: fadeInRight .5s ease forwards;
 }
 
 .menu-overlay.open .main-nav li:nth-of-type(1) {
-  animation-delay: .4s;
+    animation-delay: .4s;
 }
 .menu-overlay.open .main-nav li:nth-of-type(2) {
-  animation-delay: .45s;
+    animation-delay: .45s;
 }
 .menu-overlay.open .main-nav li:nth-of-type(3) {
-  animation-delay: .5s;
+    animation-delay: .5s;
 }
 .menu-overlay.open .main-nav li:nth-of-type(4) {
-  animation-delay: .55s;
+    animation-delay: .55s;
 }
 .menu-overlay.open .social-nav li:nth-of-type(1) {
-  animation-delay: 1s;
+    animation-delay: 1s;
 }
 .menu-overlay.open .social-nav li:nth-of-type(2) {
-  animation-delay: 1.2s;
+    animation-delay: 1.2s;
 }
 .menu-overlay.open .social-nav li:nth-of-type(3) {
-  animation-delay: 1.4s;
+    animation-delay: 1.4s;
 }
