@@ -227,15 +227,15 @@ header::after{
 }
 
 .social-nav li svg {
-    width: 3.5em;
+    width: 60.5px;
     height: auto;
-    fill: #ef463f;;
+    fill: #ef463f;
     transition: all .25s ease;
 }
 
 .social-nav li svg:hover {
     fill: #FFF;
-    transform: rotate(360deg);
+    transform: scale(1.25);
 }
 
 
