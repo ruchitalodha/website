@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie|Crafty+Girls|Gloria+Hallelujah|Pacifico|Rajdhani|Sacramento|Satisfy|Montserrat|Fresca|Courgette|Great+Vibes');
 
 body {
-    background-image: url('./img/pixel.png');
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#first-page{
+  background-image: url('./img/photu.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+  background-position: center;
+}
+.page {
+  height: 100vh;
 }
 
 .top-nav{
@@ -12,24 +25,33 @@ body {
     float: left;
     height: 100px;
     color: white;
-    background-color:#ef463f;
     width: 50%;
-}
-.right {
-    padding-right: 40px;
 }
 
 .logo {
     font-size: 40px;
     color: white;
-    font-family:Gloria Hallelujah;
-    padding: 8px 50px
+    font-family: Gloria Hallelujah;
+    margin: 0px 50px;
+    line-height: 100px;
 }
 
-body {
+/*body {
     box-sizing: border-box;
     margin: 0;
     height: 100vh;
+    /*position: relative;*}*/
+
+#first-page::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: -3;
 }
 
 body *{
@@ -37,11 +59,15 @@ body *{
 }
 
 .home-content{
-    font-size: 60px;
-    color: black;
-    padding: 50px;
-    font-family:Sacramento;
-    margin-top: 100px;
+  font-size: 60px;
+  color: white;
+  padding: 50px;
+  font-family: Sacramento;
+  top: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 header {
@@ -50,6 +76,7 @@ header {
     left: 0;
     right: 0;
     height: 100px;
+    background-color:rgba(0, 0, 0, 0.60);
 }
 
 header::after{
@@ -63,7 +90,7 @@ header::after{
 .menu-button-container {
     position: absolute;
     top: 2.4em;
-    right: 5%;
+    right: 50px;
     width: 2.5em;
     height: 1.7em;
     float: right;
