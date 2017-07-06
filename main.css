@@ -30,7 +30,6 @@ body {
 
 .left, .right {
     float: left;
-    height: 100px;
     color: white;
     width: 50%;
 }
@@ -40,7 +39,7 @@ body {
     color: white;
     font-family: Gloria Hallelujah;
     margin: 0px 50px;
-    line-height: 100px;
+    line-height: 80px;
 }
 
 #first-page::before {
@@ -63,8 +62,8 @@ body *{
   font-size: 60px;
   color: white;
   padding: 20px;
-  font-family: var(--text);
-  top: 23%;
+  font-family:var(--text);
+  top: 26%;
   position: absolute;
   left: 0;
   right: 0;
@@ -79,7 +78,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height:80px;
     background-color:rgba(0, 0, 0, 0.60);
 }
 
@@ -93,7 +92,7 @@ header::after{
 
 .menu-button-container {
     position: absolute;
-    top: 2.4em;
+    top: 1.7em;
     right: 50px;
     width: 2.5em;
     height: 1.7em;
