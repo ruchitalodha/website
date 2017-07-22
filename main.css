@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Amatic+SC|Pacifico|Nunito|Sacramento|Bellefair|Montserrat|Great+Vibes|Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Amatic+SC|Pacifico|Nunito|Sacramento|Bonbon|Montserrat|Great+Vibes|Gloria+Hallelujah');
 
 :root{
     --text:Nunito;
@@ -45,18 +45,19 @@ body {
 
 .left, .right {
     float: left;
-    color: white;
     width: 50%;
 }
 
 .logo {
-    font-size: 40px;
     color: white;
-    font-family: Gloria Hallelujah;
-    margin: 0px 50px;
-    line-height: 80px;
+    font-family: Bonbon;
+    margin: 0px 30px;
 }
 
+.logo:hover{
+    color: #ef463f;
+  animation: morph 3s infinite ease-in-out;
+}
 
 
 body *{
@@ -75,7 +76,9 @@ body *{
     text-align: center;
     font-size: 4rem;
     margin: 0 100px;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    text-shadow: 2px 2px #8c1d1c;
+
 }
 
 header {
@@ -328,10 +331,10 @@ header::after{
 }
 
 .content-heading{
-        font-family: Sacramento;
-        font-size: 70px;
-        padding: 0px;
-        margin: 0px;
+    font-family: Sacramento;
+    font-size: 70px;
+    padding: 0px;
+    margin: 0px;
 }
 /*Contents of the menu*/
 .about-section {
@@ -340,10 +343,15 @@ header::after{
     text-align: center;
     background: url('./img/dots-white-bg.png') repeat-x center,linear-gradient(black,grey);
     background-size: 100% auto;
-/*    background-color:linear-gradient(to top, rgba(0, 0, 0, 0.96) 30px, rgba(34, 125, 170, 0.68) 200px); /* #102a36;*/
     font-size:25px;
+}
+
+.about-section .content-heading{
     color: white;
-    font-family: Nunito;
+}
+
+.about-section p{
+    color: rgba(21, 18, 18, 0.69);
 }
 
 #myface{
@@ -364,6 +372,10 @@ header::after{
 
 }
 
+#works .container i{
+    display: block;
+    padding:30px;
+}
 .contact-section {
     height: 100vh;
     padding-top: 10px;
