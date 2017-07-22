@@ -334,6 +334,14 @@ header::after{
     display: block;
 }
 
+@media only screen and (max-width: 1000px) {
+    .container{
+    margin-top: 40%;
+    font-size: 40px;
+    }
+}
+
+
 .content-heading{
     font-family: Sacramento;
     font-size: 70px;
