@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Amatic+SC|Pacifico|Nunito|Sacramento|Bonbon|Montserrat|Great+Vibes|Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Amatic+SC|Pacifico|Nunito|Sacramento|Bonbon|Montserrat|Great+Vibes|Gloria+Hallelujah|Raleway');
 
 :root{
     --text:Nunito;
@@ -330,6 +330,8 @@ header::after{
 
 .container{
     margin: 10% 17%;
+    font-family: Raleway;
+    display: block;
 }
 
 .content-heading{
@@ -353,7 +355,7 @@ header::after{
 }
 
 .about-section p{
-    color: rgba(21, 18, 18, 0.69);
+    color: rgba(226, 217, 217, 0.69);
 }
 
 #myface{
@@ -375,7 +377,6 @@ header::after{
 }
 
 #works .container i{
-    display: block;
     padding:30px;
 }
 .contact-section {
