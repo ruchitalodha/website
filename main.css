@@ -52,11 +52,13 @@ body {
     color: white;
     font-family: Bonbon;
     margin: 0px 30px;
+    height: 80px !important;
 }
 
 .logo:hover{
     color: #ef463f;
-  animation: morph 3s infinite ease-in-out;
+    transform: rotate(360deg);
+    transition-duration: 1s;
 }
 
 
