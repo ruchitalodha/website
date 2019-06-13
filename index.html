@@ -8,29 +8,33 @@
   </head>
   <body>
     <header>
-      <div class="left">
+      <!-- Logo with an fa icon stacked over the rl font -->
+      <div>
         <span class="logo fa-stack fa-3x">
-        <i class="fa fa-circle-thin fa-stack-2x" style= "font-size: 1.7em;"></i>
-        <span class="fa-stack-1x ">rl</span>
+          <i class="fa fa-circle-thin fa-stack-2x" style= "font-size: 1.7em;"></i>
+          <span class="fa-stack-1x ">rl</span>
         </span>
-        <!-- <span class="logo">rl</span> -->
       </div>
-      <div class="right">
-        <div class="menu-button-container js-wp-animate-menu" id="menu-toggle">
+      <!-- Hamburger icon made with 3 divs and animated in css -->
+      <div>
+        <div class="menu-button-container" id="menu-toggle">
           <span class="menu-button-top"></span>
           <span class="menu-button-middle"></span>
           <span class="menu-button-bottom"></span>
         </div>
       </div>
+      <!-- Overlay for when the Menu is opened -->
       <div class="menu-overlay">
+        <!-- Links to sections -->
         <div class="main-nav">
           <ul>
             <li><a href="#about">Profile</a></li>
-            <li><a href="#works">Experience</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Let's Talk</a></li>
           </ul>
         </div>
+        <!-- Links to Linkedin profile and CV -->
         <div class="social-nav">
           <ul>
             <li>
@@ -52,7 +56,8 @@
         </div>
       </div>
     </header>
-    <div id="first-page" class="page">
+    <!-- First page introductory content -->
+    <div id="first-page">
       <div class="home-content">
         Hello world , I am <span class='fullname'>Ruchita Lodha</span>
         <p> A multifaceted developer, an aspiring User Experience Designer and an Art lover.</p>
@@ -66,11 +71,11 @@
         <p>Hi, I am Ruchita from India. I focus on developing interaction systems and I work as a Web Developer. I aspire to become a User Experience Specialist and want to work in a Product company.</p>
       </div>
     </section>
-    <!-- Works Section -->
-    <section id="works" class="works-section">
-      <div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
         <h1 class="content-heading">Experience</h1>
-        <div class="timeline timeline-purple">
+        <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-date">
               <div>
@@ -115,7 +120,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="contact-section">
+    <section id="skills" class="skills-section">
       <div class="container">
         <h1 class="content-heading">Skills</h1>
           <p>Show off some skills here</p>
