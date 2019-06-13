@@ -369,7 +369,7 @@ header::after {
 
 /********5.About Page with with image and introduction*********/
 .about-section {
-  padding: 0px 200px;
+  padding: 200px 200px 0px 200px;
   text-align: center;
   background: url('./img/dots-white-bg.png') repeat-x center, linear-gradient(black, grey);
   background-size: 100% auto;
