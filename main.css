@@ -337,7 +337,7 @@ header::after {
   color: #fff;
   padding: 20px;
   font-family: var(--homeText);
-  top: 35%;
+  top: 25%;
   position: absolute;
   left: 0;
   right: 0;
@@ -352,6 +352,7 @@ header::after {
   text-shadow: none;
   padding: 0px 10px;
   border-radius: 10px;
+  display: inline-block;
 }
 
 .fullname:hover {
@@ -362,7 +363,7 @@ header::after {
 /*MEDIA QUERY HOME CONTENT*/
 @media (max-width: 900px) {
   .home-content {
-    font-size: 50px;
+    font-size: 40px;
     top: 50%;
   }
 }
@@ -412,7 +413,7 @@ header::after {
 
 .timeline-item>div {
   flex: 1;
-  padding: 5px 40px;
+  padding: 0px 20px;
 }
 
 .timeline-item>div:last-child {
@@ -511,6 +512,9 @@ header::after {
     border-width: 0px !important;
     text-align: left !important;
     order: unset !important;
+  }
+  .timeline-content {
+    font-size: 15px;
   }
   .timeline-item>div::after {
     left: 0% !important;
