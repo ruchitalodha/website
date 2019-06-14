@@ -35,6 +35,7 @@ header::after {
 
 a {
   text-decoration: none;
+  color: var(--textColor);
 }
 
 /********1.1 LOGO********/
@@ -169,11 +170,11 @@ a {
 }
 
 /*MEDIA QUERY- MENU NAVIGATION*/
-/*Increase the height of main nav when small devices are there and increase the font size.*/
+/*Increase the height of main nav when big devices are there and increase the font size.*/
 @media (min-width: 900px) {
   .main-nav {
     height: 50% !important;
-    font-size: 100%;
+    font-size: 70%;
   }
 }
 
@@ -215,7 +216,7 @@ a {
   position: relative;
   text-align: center;
   width: 100%;
-  top: 15%;
+  top: 30%;
 }
 
 .social-nav ul {
@@ -295,6 +296,10 @@ a {
   animation-delay: .55s;
 }
 
+.menu-overlay.open .main-nav li:nth-of-type(5) {
+  animation-delay: .60s;
+}
+
 .menu-overlay.open .social-nav li:nth-of-type(1) {
   animation-delay: 1s;
 }
@@ -359,6 +364,7 @@ a {
   display: inline-block;
 }
 
+.fullname:hover > a,
 .fullname:hover {
   color: #fff;
   background: var(--textColor);
