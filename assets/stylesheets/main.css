@@ -575,8 +575,32 @@ a {
 .skills-section {
   background: linear-gradient(#ccc, #f1f1f1);
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
+.skills-list .column {
+  border-right: 2px solid var(--textColor);
+  padding: 10px;
+  min-width: 150px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--textColor);
+  text-shadow: 1px 1px var(--textColor);
+}
+
+.skills-list div:last-child {
+  border-right: none;
+}
+
+.artworks-container {
+  margin-top: 40px;
+}
+.artworks .column>img {
+  max-width: 250px;
+  max-height: 300px;
+  margin: 10px;
+}
 
 /********8.Contact Section*********/
 .contact-section {
@@ -587,6 +611,7 @@ a {
   background-size: 100% auto;
   color: #454645;
   font-size: 25px;
+  padding: 100px 0px 100px 0px;
 }
 
 
