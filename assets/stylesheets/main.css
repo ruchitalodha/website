@@ -639,12 +639,16 @@ a {
 
 .project:hover {
   background-color: var(--textColor);
-  color: white;
+  color: white !important;
 }
 
 .project-description {
   margin-top: 25%;
   padding: 0px 5px;
+}
+
+.project-description>p {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 700px) and (max-width: 1024px){
